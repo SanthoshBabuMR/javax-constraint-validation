@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.babusa.learn'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/javax.validation/validation-api
+    compile group: 'javax.validation', name: 'validation-api', version: '2.0.0.Final'
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-validator
+    compile group: 'org.hibernate', name: 'hibernate-validator', version: '4.2.0.Final'
+    // https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime
+    compile group: 'org.glassfish.jaxb', name: 'jaxb-runtime', version: '2.4.0-b180830.0438'
+}
